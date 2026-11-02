@@ -2,6 +2,10 @@
 
 Kho phân phối bộ cài và tài liệu công khai. Không chứa mã nguồn ứng dụng.
 
+Landing page: https://charlie-long-working.github.io/ai-video-studio-releases/
+
+Trang tĩnh trong `website/` tự deploy lên GitHub Pages khi được cập nhật trên nhánh `main`.
+
 ## Trạng thái
 
 Bộ cài mới nhất được cung cấp tại [Latest release](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest). CI kiểm tra và chạy thử app đóng gói trên Windows x64, macOS Apple Silicon và macOS Intel trước khi phát hành.
