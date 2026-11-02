@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- Sửa việc dọn profile kiểm thử trên Windows: chỉ xoá sau khi Electron đã thoát và nhả khoá file Chromium.
+- Lưu cache media sau khi build thành công. Tính năng Studio và hàng đợi giữ như 0.2.0.
+
 ## 0.2.0
 
 ## Studio và thư viện dự án
