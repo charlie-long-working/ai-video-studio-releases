@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.8
+
+- Dọn cache ứng dụng lần đầu mở và mỗi 24 giờ; giữ lịch qua các lần đóng/mở app.
+- Làm mới phiên Chrome/Muse sau 24 giờ, cần đăng nhập lại; chờ tác vụ đang xử lý hoàn tất trước khi xoá phiên.
+- Giữ video, hàng đợi và thông tin bản quyền.
+- Cập nhật giao diện Muse Auto, hướng dẫn cài đặt và câu hỏi thường gặp.
+
+
 ## 0.1.3 — phát hành công khai chưa ký chứng chỉ
 
 - CI xác minh ba bộ cài và chạy thử app đóng gói trên từng nền tảng.
