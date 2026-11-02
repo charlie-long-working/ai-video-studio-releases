@@ -16,6 +16,15 @@ Tải bộ cài tại [Latest release](https://github.com/charlie-long-working/a
 
 Tải bộ cài trong [Releases](https://github.com/charlie-long-working/ai-video-studio-releases/releases), chọn đúng hệ điều hành/kiến trúc và kiểm tra SHA256SUMS.txt. Mục Source code do GitHub tự sinh chỉ chứa tài liệu/trang giới thiệu của kho này.
 
+## Tải trực tiếp
+
+- [macOS Apple Silicon](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-arm64.dmg)
+- [macOS Intel](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-x64.dmg)
+- [Windows x64](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-win-x64.exe)
+- [SHA256SUMS.txt](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/SHA256SUMS.txt)
+
+Các link cố định tự trỏ tới bản Latest đã phát hành.
+
 ## Kích hoạt
 
 Mở Bản quyền / Kích hoạt, gửi mã thiết bị cho người bán rồi nhập file license được cấp. Có gói 1/3/6 tháng tính từ kích hoạt đầu tiên trên server hoặc vĩnh viễn cho phiên bản được cấp quyền kèm 12 tháng cập nhật/hỗ trợ. Credit AI không đi kèm. License cũ giữ quyền đã cấp.
