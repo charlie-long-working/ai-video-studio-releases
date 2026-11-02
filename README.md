@@ -4,9 +4,20 @@ Kho phân phối bộ cài và tài liệu công khai. Không chứa mã nguồn
 
 ## Trạng thái
 
-Chưa phát hành bản công khai được phê duyệt. Bản Mac 0.1.2 hiện là thử nghiệm nội bộ, ký ad-hoc; Windows chưa xác minh runtime. Không xem các bản thử nghiệm là đã Developer ID/notarize.
+Bộ cài mới nhất được cung cấp tại [Latest release](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest). CI kiểm tra và chạy thử app đóng gói trên Windows x64, macOS Apple Silicon và macOS Intel trước khi phát hành.
 
-Khi phát hành, tải bộ cài trong [Releases](https://github.com/charlie-long-working/ai-video-studio-releases/releases), chọn đúng hệ điều hành/kiến trúc và kiểm tra SHA256SUMS.txt. Mục Source code do GitHub tự sinh chỉ chứa tài liệu/trang giới thiệu của kho này.
+Bản hiện tại chưa có chứng chỉ nhà phát hành: Mac ký ad-hoc, chưa Developer ID/notarization; Windows chưa ký publisher. Hệ điều hành có thể hiển thị cảnh báo bảo mật.
+
+## Tải trực tiếp
+
+- [macOS Apple Silicon](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-arm64.dmg)
+- [macOS Intel](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-x64.dmg)
+- [Windows x64](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-win-x64.exe)
+- [SHA256SUMS.txt](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/SHA256SUMS.txt)
+
+Các link cố định trên tự chuyển sang bản Latest sau mỗi lần phát hành.
+
+Tải bộ cài trong [Releases](https://github.com/charlie-long-working/ai-video-studio-releases/releases), chọn đúng hệ điều hành/kiến trúc và kiểm tra SHA256SUMS.txt. Mục Source code do GitHub tự sinh chỉ chứa tài liệu/trang giới thiệu của kho này.
 
 ## Kích hoạt
 
