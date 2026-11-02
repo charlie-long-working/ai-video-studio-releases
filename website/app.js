@@ -3,13 +3,19 @@ import { priceFor, promotionActive, promotionNote, watchPricing } from './pricin
 function renderPricing() {
  const card = document.querySelector('.plan-grid .forever');
  if (card) {
-  const price = priceFor('perpetual'); const formatted = money(price);
+  const price = priceFor('perpetual',undefined,language==='en'?'USD':'VND'); const formatted = money(price);
   card.querySelector('.price').textContent = formatted;
   card.querySelector('.plan-label').textContent = promotionActive() ? t('Đề xuất · Ưu đãi 7 ngày đầu','Recommended · Launch offer') : t('Đề xuất');
-  card.querySelector('#perpetual-promotion').textContent = language === 'en' ? (promotionActive() ? '7-day launch offer: 2–8 November 2026, ending at 23:59 on 8 November (Vietnam time). After the offer: 999,000 VND.' : 'Regular price: 999,000 VND. One-time payment.') : promotionNote();
+  card.querySelector('#perpetual-promotion').textContent = language === 'en' ? (promotionActive() ? '7-day launch offer: 2–8 November 2026, ending at 23:59 on 8 November (Vietnam time). After the offer: $40 USD.' : 'Regular price: $40 USD. One-time payment.') : promotionNote();
   card.querySelector('.plan-description').textContent = promotionActive() ? t('Mua một lần với giá ưu đãi, dùng phiên bản được cấp quyền không hết hạn.','Pay once at the launch price and keep using your licensed version with no expiry.') : t('Thêm 300.000đ so với gói 6 tháng để có license không hết hạn.');
-  card.querySelector('.plan-comparison').textContent = language === 'en' ? `The ${promotionActive() ? 'offer ' : ''}price is about ${(price / 299000).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})} times the 1-month plan (${formatted} ÷ 299,000 VND).` : 'Giá ' + (promotionActive() ? 'ưu đãi ' : '') + 'bằng khoảng ' + (price / 299000).toLocaleString('vi-VN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' lần gói 1 tháng (' + formatted + ' ÷ 299.000đ).';
+  card.querySelector('.plan-comparison').textContent = language === 'en' ? `The ${promotionActive() ? 'offer ' : ''}price is about ${(price / 12).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})} times the 1-month plan (${formatted} ÷ $12 USD).` : 'Giá ' + (promotionActive() ? 'ưu đãi ' : '') + 'bằng khoảng ' + (price / 299000).toLocaleString('vi-VN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' lần gói 1 tháng (' + formatted + ' ÷ 299.000đ).';
   card.querySelector('.plan-contact').dataset.plan = t('Vĩnh viễn') + ' · ' + formatted;
+ }
+ const keys=['month1','month3','month6','perpetual'];
+ for (const [index,article] of [...document.querySelectorAll('.plan-grid article')].entries()) {
+  const amount=priceFor(keys[index],undefined,language==='en'?'USD':'VND');
+  article.querySelector('.price').textContent=money(amount);
+  article.querySelector('.plan-contact').dataset.plan=t(['1 tháng','3 tháng','6 tháng','Vĩnh viễn'][index])+' · '+money(amount);
  }
  for (const link of document.querySelectorAll('.plan-contact')) {
   const plan = language === 'en' ? link.dataset.plan.replace('1 tháng','1 month').replace('3 tháng','3 months').replace('6 tháng','6 months').replace('Vĩnh viễn','Perpetual') : link.dataset.plan;

@@ -4,7 +4,7 @@ const query = new URLSearchParams(location.search).get('lang');
 let saved; try { saved = localStorage.getItem('muse-language'); } catch { /* Storage may be disabled. */ }
 export let language = supported(query) ? query : supported(saved) ? saved : (navigator.languages?.[0] || navigator.language || 'vi').toLowerCase().startsWith('vi') ? 'vi' : 'en';
 export const t = (vi, en = english[vi]) => language === 'en' ? en ?? vi : vi;
-export const money = value => language === 'en' ? value.toLocaleString('en-US') + ' VND' : value.toLocaleString('vi-VN') + 'đ';
+export const money = (value, currency = language === 'en' ? 'USD' : 'VND') => currency === 'USD' ? '$' + value.toLocaleString('en-US') + ' USD' : value.toLocaleString('vi-VN') + 'đ';
 const originals = new WeakMap();
 const attributes = new WeakMap();
 function translate() {
