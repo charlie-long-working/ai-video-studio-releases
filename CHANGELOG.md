@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.2
+
+## Màn hình làm việc
+
+- Tách Studio dự án, Tạo video hàng loạt, Ghép thành phim và Hàng đợi thành các màn hình riêng.
+- Giữ bản nháp khi chuyển màn hình; hàng đợi chung tiếp tục xử lý ở nền. Các màn làm việc có tóm tắt tiến trình và nút mở hàng đợi.
+- Chuyển phần xuất storyboard sang Ghép thành phim, bên cạnh tab ghép clip từ máy/hàng đợi. Studio có nút chuyển sang xuất dự án.
+
+## Studio và affiliate
+
+- Sửa lỗi quá số ảnh khi một cảnh đã có ảnh nhưng hồ sơ nhân vật/sản phẩm chứa thêm ảnh. Ảnh chọn trực tiếp trong cảnh được ưu tiên, hồ sơ giữ nguyên.
+- Bộ 5 prompt người mẫu, caption affiliate và 6 biến thể văn bản (3 hook × 2 CTA) từ thông tin sản phẩm đã xác minh. Đây là công cụ văn bản local, không tự tạo ảnh hoặc 6 video.
+- Muse dùng tối đa 4 tác vụ độc lập theo giới hạn adapter; mỗi tác vụ có tab riêng, giữ mã khi huỷ hoặc phục hồi.
+
+## Giới hạn và cập nhật
+
+- Muse hiện chỉ hỗ trợ văn bản → video qua Chrome; ảnh tham chiếu và ảnh → video chưa bật. Cần tài khoản và đăng nhập thủ công.
+- Mock là video ảnh tĩnh để thử luồng. Không có AI viết kịch bản, TTS API mới, lip-sync hoặc phụ đề đồng bộ từng từ.
+- Phí phần mềm không bao gồm tài khoản/credit AI. Giữ nguyên dự án, video, hàng đợi và license khi cập nhật.
+- macOS ký ad-hoc, chưa có Developer ID/notarization; Windows chưa ký chứng chỉ nhà phát hành. Bộ cài do CI kiểm tra riêng theo nền tảng trước khi phát hành.
+
+
 ## 0.2.1
 
 - Sửa việc dọn profile kiểm thử trên Windows: chỉ xoá sau khi Electron đã thoát và nhả khoá file Chromium.

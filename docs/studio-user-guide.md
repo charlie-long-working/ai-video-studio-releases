@@ -1,6 +1,8 @@
-# Muse Auto Studio — 0.2.0
+# Muse Auto Studio — 0.2.2
 
 Ứng dụng không tự cập nhật app đang cài; thoát app cũ, cài bộ cài đúng hệ điều hành/kiến trúc rồi mở lại. Không xoá Application Support: đó là nơi giữ hàng đợi, license và phiên đăng nhập hiện có.
+
+Bốn màn hình: **Studio dự án**, **Tạo video hàng loạt**, **Ghép thành phim**, **Hàng đợi**. Chuyển màn giữ bản nháp và không dừng hàng đợi. Xem [hướng dẫn bố cục](workspace-navigation.md).
 
 ## Một video đầu tiên không tốn lượt AI
 
@@ -9,9 +11,9 @@
 3. Trong **Nhân vật / KOL**, lưu tên, ngoại hình, trang phục, phong cách và ảnh. Chọn đúng hư cấu/người thật. Người thật cần xác nhận quyền sử dụng ảnh/giọng. Hồ sơ có thể chỉnh sửa, nhân bản, dùng lại ở nhiều cảnh.
 4. Trong **Sản phẩm**, thêm ảnh nhiều góc, thông tin đã xác nhận, điểm bán hàng, CTA và link affiliate. Chỉ nhập thông tin thật đã kiểm tra; app không tự tạo thông số hoặc trải nghiệm chứng thực.
 5. Trong **Storyboard**, thêm cảnh thủ công hoặc chọn một trong ba mẫu local: KOL giới thiệu, sản phẩm kèm thuyết minh, kể chuyện có nhân vật. Mẫu không gọi AI. Sửa nhân vật/sản phẩm/ảnh, prompt hình ảnh/chuyển động, lời thoại, phụ đề, thời lượng và tỷ lệ. Dùng nút lên/xuống để đổi thứ tự; nhân bản cảnh khi cần.
-6. Chọn **Mock local**, chọn cảnh, bấm **Xem trước**. Xem prompt, tên file, số cảnh/yêu cầu. Xác nhận thêm vào hàng đợi chưa chạy; bấm **Bắt đầu hàng loạt** ở hàng đợi bên dưới khi sẵn sàng. Mock từ ảnh dùng một ảnh mở đầu và xuất video ảnh tĩnh, không phải chuyển động AI, không bảo đảm giữ khuôn mặt/sản phẩm như dịch vụ thật. Mỗi cảnh chỉ nhận một ảnh duy nhất sau khi gộp ảnh cảnh/nhân vật/sản phẩm; cùng một ảnh được dùng ở nhiều hồ sơ chỉ tính một lần. Nếu có nhiều ảnh, chọn một ảnh/composite để kiểm thử. Prompt `[fail]` giúp thử lỗi Mock.
+6. Chọn **Mock local**, chọn cảnh, bấm **Xem trước**. Xem prompt, tên file, số cảnh/yêu cầu. Xác nhận thêm vào hàng đợi chưa chạy; bấm **Bắt đầu hàng loạt** trong màn hình Hàng đợi khi sẵn sàng. Mock từ ảnh dùng một ảnh mở đầu và xuất video ảnh tĩnh, không phải chuyển động AI, không bảo đảm giữ khuôn mặt/sản phẩm như dịch vụ thật. Ảnh chọn trực tiếp trong cảnh được ưu tiên; ảnh hồ sơ chỉ dùng dự phòng khi cảnh chưa có ảnh. Mock chỉ nhận một ảnh cảnh, không cần bỏ ảnh khỏi hồ sơ. Prompt `[fail]` giúp thử lỗi Mock.
 7. **Voice Studio**: chọn cảnh và **Nhập voice từ máy**. Nhận MP3/WAV/M4A/AAC/FLAC/OGG dưới 50 MB, tối đa hai giờ. Audio được kiểm tra bằng FFprobe rồi sao chép vào dự án. **Nghe thử** hỗ trợ đoạn dưới 8 MB. Khi đổi lời thoại, voice đang gán bị bỏ gán để tránh ghép nhầm; file audio vẫn được giữ để dùng lại.
-8. **Ghép và xuất video affiliate**: chọn một phiên bản hoàn tất cho từng cảnh, tỷ lệ 9:16/16:9/1:1, HD/Full HD. Chọn logo trong thư viện, sửa CTA, bật/tắt phụ đề, chỉnh âm lượng voice và nhạc nền. Voice gán thay audio gốc của cảnh; tuỳ chọn giữ audio gốc chỉ áp dụng cảnh chưa gán voice. Chọn tên/nơi lưu MP4. Có tiến độ và huỷ; file chỉ xuất hiện khi hoàn tất, không ghi đè video gốc hoặc kết quả cũ.
+8. Bấm **Ghép và xuất dự án này**, hoặc vào **Ghép thành phim → Storyboard dự án**. Trong **Ghép và xuất video affiliate**: chọn một phiên bản hoàn tất cho từng cảnh, tỷ lệ 9:16/16:9/1:1, HD/Full HD. Chọn logo trong thư viện, sửa CTA, bật/tắt phụ đề, chỉnh âm lượng voice và nhạc nền. Voice gán thay audio gốc của cảnh; tuỳ chọn giữ audio gốc chỉ áp dụng cảnh chưa gán voice. Chọn tên/nơi lưu MP4. Có tiến độ và huỷ; file chỉ xuất hiện khi hoàn tất, không ghi đè video gốc hoặc kết quả cũ.
 
 Phụ đề hiện trọn cảnh theo thời lượng video, không đồng bộ từng từ. Nên dùng câu ngắn. Voice dài bị cắt, voice ngắn được thêm im lặng. Không có lip-sync. Tỷ lệ xuất được FFmpeg chuẩn hoá; cảnh khác tỷ lệ được thêm viền. Tối đa 100 cảnh/hai giờ mỗi phim. Chọn ổ hỗ trợ hard link (APFS/NTFS) để xuất an toàn; ổ không hỗ trợ sẽ báo lỗi thay vì ghi đè.
 
