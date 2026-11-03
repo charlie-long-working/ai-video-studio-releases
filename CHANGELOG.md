@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.5
+
+- License 12 tháng theo lịch; giữ quyền license cũ. Landing và checkout Việt/Anh thay gói vĩnh viễn bằng gói 12 tháng, ưu đãi 599.000đ / $24; cập nhật mô tả chạy đồng thời và ưu đãi tài khoản.
+
 ## 0.2.4
 
 - Trial công khai 1 ngày; người bán cấp số ngày tùy chọn qua gói daily.
