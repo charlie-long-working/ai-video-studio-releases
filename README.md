@@ -6,9 +6,9 @@ Landing page: https://charlie-long-working.github.io/ai-video-studio-releases/
 
 Trang tĩnh trong website/ được tự động deploy lên GitHub Pages khi nhánh main cập nhật.
 
-## Studio 0.2.3
+## Studio 0.2.4
 
-Có trial 1/3 ngày do người bán cấp bằng file, hạn từ lúc cấp và không kèm credit AI; xem [hướng dẫn trial](docs/trial-guide.md). Bốn màn hình Studio / Tạo video / Ghép phim / Hàng đợi; sửa chọn ảnh cảnh và thêm công cụ prompt/caption affiliate local. Xem [bố cục mới](docs/workspace-navigation.md). Quản lý storyboard và thư viện ảnh/video theo dự án, lưu lựa chọn clip, nhập voice và ghép phim local. Ảnh AI, ảnh → video Muse, AI viết kịch bản và TTS API chưa mở. Xem [hướng dẫn Studio](docs/studio-user-guide.md) và [huỷ/xoá tác vụ](docs/queue-cancel-guide.md).
+Có trial miễn phí 1 ngày do người bán cấp bằng file, hạn từ lúc cấp và không kèm credit AI; người bán có thể cấp license số ngày tùy chọn; xem [hướng dẫn trial](docs/trial-guide.md). Bốn màn hình Studio / Tạo video / Ghép phim / Hàng đợi; sửa chọn ảnh cảnh và thêm công cụ prompt/caption affiliate local. Xem [bố cục mới](docs/workspace-navigation.md). Quản lý storyboard và thư viện ảnh/video theo dự án, lưu lựa chọn clip, nhập voice và ghép phim local. Ảnh AI, ảnh → video Muse, AI viết kịch bản và TTS API chưa mở. Xem [hướng dẫn Studio](docs/studio-user-guide.md) và [huỷ/xoá tác vụ](docs/queue-cancel-guide.md).
 
 ## Trạng thái
 

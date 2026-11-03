@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.4
+
+- Trial công khai 1 ngày; người bán cấp số ngày tùy chọn qua gói daily.
+- Cập nhật ưu đãi tài khoản Muse AI, trách nhiệm sử dụng và phạm vi hỗ trợ trên landing Việt/Anh.
+- Sửa smoke Windows đợi cấu hình provider/model sẵn sàng và dùng màn hình hiển thị.
+
 ## 0.2.3
 
 - Thêm trial 1/3 ngày bằng license offline có chữ ký, hạn cố định từ lúc cấp; giữ license trả phí cũ.

@@ -1,14 +1,14 @@
-# Muse Auto - Dùng thử 1 ngày và 3 ngày
+# Muse Auto - Dùng thử 1 ngày và cấp theo ngày
 
-Bản bổ sung: 0.2.3. Cùng một bộ cài hỗ trợ trả phí và trial; không cần làm hai app khác nhau.
+Bản bổ sung: 0.2.4. Cùng một bộ cài hỗ trợ trả phí và trial; không cần làm hai app khác nhau.
 
 ## Cách cấp cho khách
 
 1. Khách cài phiên bản có hỗ trợ trial, mở Bản quyền / Kích hoạt.
-2. Khách chọn Dùng thử 1 ngày hoặc Dùng thử 3 ngày, Copy mã thiết bị và gửi cho người bán. Hai nút chỉ chọn yêu cầu, không tự cấp quyền.
+2. Khách chọn Dùng thử 1 ngày, Copy mã thiết bị và gửi cho người bán. Nút yêu cầu chỉ sao chép mã thiết bị, không tự cấp quyền.
 3. Người bán mở tools/cap-trial-1-ngay.command hoặc tools/cap-trial-3-ngay.command trên máy chứa checkout và khóa ký hiện có; dán mã thiết bị khi được hỏi. Không chạy license:init nếu đã có khóa.
 4. Công cụ in thời điểm hết hạn và đường dẫn file .license. Chỉ gửi file này cho khách. Không gửi checkout, private-key.pem, .license-tools hay thư mục .license-issuer.
-5. Khách dùng Nhập file license hoặc dán token rồi Kích hoạt. App hiển thị Dùng thử 1/3 ngày và thời điểm hết hạn. Không tự chạy hàng đợi sau khi kích hoạt.
+5. Khách dùng Nhập file license hoặc dán token rồi Kích hoạt. App hiển thị đúng số ngày được người bán cấp và thời điểm hết hạn. Không tự chạy hàng đợi sau khi kích hoạt.
 6. Hết hạn chặn tạo video mới; dự án và file đã có vẫn được giữ. Nâng cấp bằng file license trả phí như trước.
 
 ## Lệnh cấp thủ công
@@ -35,3 +35,14 @@ Công cụ sẽ hỏi mã thiết bị. Có thể thêm --device với mã thậ
 ## Kiểm tra
 
 Các bài test dùng khóa tạm kiểm tra hai hạn 24/72 giờ, nhập lại/mở lại không reset, hết hạn đúng biên, không đổi sang trial dài hơn, không hạ license trả phí, nâng cấp lên trả phí và từ chối cấp trial lặp trên cùng thiết bị. Giao diện và app đóng gói được kiểm tra bằng profile riêng; không cấp trial thật cho máy chủ sản phẩm và không gọi AI có phí.
+
+## Công cụ người bán: số ngày tùy chọn
+
+App và landing chỉ mời dùng thử miễn phí 1 ngày. Người bán có thể tự cấp số ngày nguyên dương theo thỏa thuận:
+
+```sh
+npm run license:issue -- --plan daily --days 7
+npm run license:issue -- --plan daily --days 30
+```
+
+Hoặc mở tools/cap-license-so-ngay.command rồi nhập mã thiết bị và số ngày. Gói daily là license do người bán chủ động cấp, không bị giới hạn một trial; có thể nâng cấp từ trial. Hạn tính từ lúc cấp file. Khách cần app 0.2.4 trở lên để nhận gói daily; license tháng/vĩnh viễn và trial 1/3 ngày đã cấp vẫn tương thích. Nếu cấp trial có chủ ý với số ngày khác, --plan trial --days N cũng nhận số nguyên dương nhưng giữ hồ sơ một trial mỗi thiết bị.
