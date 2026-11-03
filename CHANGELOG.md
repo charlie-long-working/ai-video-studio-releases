@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3
+
+- Thêm trial 1/3 ngày bằng license offline có chữ ký, hạn cố định từ lúc cấp; giữ license trả phí cũ.
+- Sửa test khởi động Chrome bị timeout quá ngắn trên Windows, cập nhật cache actions Node 24.
+- Bao gồm màn hình riêng và sửa ảnh cảnh của 0.2.2; xem release notes để biết giới hạn provider.
+
 ## 0.2.2
 
 ## Màn hình làm việc
