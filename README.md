@@ -20,7 +20,7 @@ Tải bộ cài trong [Releases](https://github.com/charlie-long-working/ai-vide
 
 - [macOS Apple Silicon](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-arm64.dmg)
 - [macOS Intel](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-mac-x64.dmg)
-- [Windows x64](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/Muse-Auto-win-x64.exe)
+- [Windows x64](https://github.com/charlie-long-working/ai-video-studio-releases/releases/download/v0.2.5/Muse-Auto-win-x64.exe)
 - [SHA256SUMS.txt](https://github.com/charlie-long-working/ai-video-studio-releases/releases/latest/download/SHA256SUMS.txt)
 
 Các link cố định tự trỏ tới bản Latest đã phát hành.

@@ -1,4 +1,5 @@
 export const english = {
+  "Windows hiện là bản 0.2.5; bản 0.2.6 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.6 is currently available for macOS.",
   "HỖ TRỢ MACOS": "MACOS HELP",
   "Mac báo “Muse Auto” Not Opened?": "Mac says “Muse Auto” Not Opened?",
   "Bản Mac hiện dùng chữ ký ad-hoc, chưa có Apple Developer ID/notarization. Cảnh báo này có thể xuất hiện với bản tải từ Internet; build lại không tự loại bỏ cảnh báo.": "The Mac build is ad-hoc signed, without Apple Developer ID or notarization. Internet downloads may trigger this warning; rebuilding alone does not remove it.",
