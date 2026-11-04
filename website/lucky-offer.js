@@ -1,15 +1,15 @@
 import { t, language } from './i18n.js';
-const key='muse-lucky-offer-v2';
+const key='muse-lucky-offer-v3';
 let percent=0;
-const valid=value=>Number.isInteger(value*2)&&value>=20&&value<=30;
+const valid=value=>Number.isInteger(value)&&value>=25&&value<=35;
 try { const saved=Number(localStorage.getItem(key)); if(valid(saved))percent=saved; } catch {}
 export const discountPercent=()=>percent;
 export const discountedPrice=(price,currency='VND')=>currency==='VND'?Math.round(price*(1-percent/100)/1000)*1000:Math.round(price*(1-percent/100)*100)/100;
-// Rejection sampling gives each of the 21 half-point outcomes exactly equal probability.
+// Rejection sampling gives each of the 11 whole-point outcomes exactly equal probability.
 export function drawDiscount(random=crypto.getRandomValues.bind(crypto)){
- const bytes=new Uint32Array(1);const limit=2**32-(2**32%21);
+ const bytes=new Uint32Array(1);const limit=2**32-(2**32%11);
  do{random(bytes);}while(bytes[0]>=limit);
- return 20+(bytes[0]%21)/2;
+ return 25+bytes[0]%11;
 }
 export function mountLuckyOffer(onChange){
  const host=document.getElementById('lucky-offer');if(!host)return;
