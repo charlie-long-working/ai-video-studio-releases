@@ -1,4 +1,11 @@
 export const english = {
+  "VIDEO DEMO": "VIDEO DEMOS",
+  "Hai góc nhìn.": "Two perspectives.",
+  "Cùng một công cụ.": "One creative tool.",
+  "Phim ngắn AI ·": "AI short film ·",
+  "Tác phẩm văn học ·": "Literature ·",
+  "Xem video demo ↓": "Watch the demos ↓",
+
   "DEMO / TÁC PHẨM VĂN HỌC": "DEMO / LITERATURE",
   "Tác phẩm văn học,": "Literature,",
   "kể bằng hình ảnh.": "told through images.",
