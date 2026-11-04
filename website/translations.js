@@ -1,4 +1,10 @@
 export const english = {
+  "DEMO / TÁC PHẨM VĂN HỌC": "DEMO / LITERATURE",
+  "Tác phẩm văn học,": "Literature,",
+  "kể bằng hình ảnh.": "told through images.",
+  "Video demo Muse Auto — Tác phẩm văn học": "Muse Auto demo — Literature",
+  "Video demo tác phẩm văn học ·": "Literature demo ·",
+
   "Windows hiện là bản 0.2.5; bản 0.2.6 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.6 is currently available for macOS.",
   "HỖ TRỢ MACOS": "MACOS HELP",
   "Mac báo “Muse Auto” Not Opened?": "Mac says “Muse Auto” Not Opened?",
