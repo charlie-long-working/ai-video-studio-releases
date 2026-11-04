@@ -1,9 +1,10 @@
+import { discountPercent, discountedPrice, mountLuckyOffer } from './lucky-offer.js';
 import { t, language, money } from './i18n.js';
 import { priceFor, promotionActive, promotionNote, watchPricing } from './pricing.js';
 function renderPricing() {
  const card = document.querySelector('.plan-grid .annual');
  if (card) {
-  const price = priceFor('month12',undefined,language==='en'?'USD':'VND'); const formatted = money(price);
+  const price = priceFor('month12',undefined,language==='en'?'USD':'VND'); const formatted = money(discountedPrice(price,language==='en'?'USD':'VND'));
   card.querySelector('.price').textContent = formatted;
   card.querySelector('.plan-label').textContent = promotionActive() ? t('Đề xuất · Ưu đãi 7 ngày đầu','Recommended · Launch offer') : t('Đề xuất');
   card.querySelector('#annual-promotion').textContent = language === 'en' ? (promotionActive() ? '7-day launch offer: 2–8 November 2026, ending at 23:59 on 8 November (Vietnam time). After the offer: $40 USD.' : 'Regular price: $40 USD. One-time payment.') : promotionNote();
@@ -15,8 +16,11 @@ function renderPricing() {
  const keys=['month1','month3','month6','month12'];
  for (const [index,article] of [...document.querySelectorAll('.plan-grid article')].entries()) {
   const amount=priceFor(keys[index],undefined,language==='en'?'USD':'VND');
-  article.querySelector('.price').textContent=money(amount);
-  article.querySelector('.plan-contact').dataset.plan=t(['1 tháng','3 tháng','6 tháng','12 tháng'][index])+' · '+money(amount);
+  const base=priceFor('month1',undefined,language==='en'?'USD':'VND')*[1,3,6,12][index];
+  const comparison=article.querySelector('.plan-comparison');
+  if(index>0&&comparison){const saving=((1-amount/base)*100).toLocaleString(language==='en'?'en-US':'vi-VN',{maximumFractionDigits:1,minimumFractionDigits:1});comparison.textContent=t(`Tiết kiệm ${saving}% so với mua ${[1,3,6,12][index]} lần gói 1 tháng (${money(base)}).`,`Save ${saving}% compared with ${[1,3,6,12][index]} separate 1-month purchases (${money(base)}).`);}
+  article.querySelector('.price').textContent=money(discountedPrice(amount,language==='en'?'USD':'VND'));
+  article.querySelector('.plan-contact').dataset.plan=t(['1 tháng','3 tháng','6 tháng','12 tháng'][index])+' · '+money(discountedPrice(amount,language==='en'?'USD':'VND'));
  }
  for (const link of document.querySelectorAll('.plan-contact')) {
   const plan = language === 'en' ? link.dataset.plan.replace('1 tháng','1 month').replace('3 tháng','3 months').replace('6 tháng','6 months').replace('12 tháng','12 months') : link.dataset.plan;
@@ -28,3 +32,5 @@ function renderPricing() {
 watchPricing(renderPricing);
 
 document.addEventListener('languagechange',renderPricing);
+
+mountLuckyOffer(renderPricing);
