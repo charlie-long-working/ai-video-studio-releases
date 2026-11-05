@@ -338,6 +338,7 @@ export const english = {
   "Trial miễn phí 1 ngày được cấp bằng file cho một thiết bị, tính 24 giờ từ lúc cấp; không kèm tài khoản hoặc token AI. Các gói trả phí giữ giá và thời hạn như bảng giá.": "The free 1-day trial is issued as a file for one device and lasts 24 hours from issuance; no AI account or tokens are included. Paid plan prices and terms remain as listed.",
   "Hỗ trợ tài khoản": "ACCOUNT SUPPORT",
   "Hỗ trợ tài khoản Muse AI": "Muse AI account support",
+  "Hỗ trợ tài khoản Muse AI được ghi tại mục License.": "Muse AI account support is described in the License section.",
   "Hỗ trợ liên quan đến tài khoản Muse AI. Trạng thái và khả năng sử dụng phụ thuộc nền tảng Muse AI.": "Support is available for Muse AI accounts. Account status and availability depend on the Muse AI platform.",
   "Hỗ trợ liên quan đến tài khoản Muse AI. Trạng thái, hạn mức và khả năng sử dụng phụ thuộc nền tảng Muse AI.": "Support is available for Muse AI accounts. Status, allowances and availability depend on the Muse AI platform.",
   "Hỗ trợ kỹ thuật áp dụng cho lỗi và vấn đề của phần mềm Muse Auto trong thời hạn hỗ trợ của gói. Hỗ trợ tài khoản Muse AI phụ thuộc trạng thái và dịch vụ của Muse AI.": "Technical support covers Muse Auto software issues during the plan term. Muse AI account support depends on the platform’s status and service.",
