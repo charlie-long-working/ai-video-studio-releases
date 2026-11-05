@@ -335,6 +335,7 @@ export const english = {
   "Các điều kiện này không loại trừ trách nhiệm bắt buộc của bên bán hoặc quyền hợp pháp của người dùng theo pháp luật áp dụng.": "These conditions do not exclude the seller’s mandatory obligations or users’ statutory rights under applicable law.",
   "Khách cần tuân thủ điều kiện của provider, có quyền sử dụng dữ liệu đầu vào và kiểm tra video trước khi đăng. Không bảo đảm một prompt luôn tạo thành công hoặc nội dung luôn được nền tảng mạng xã hội chấp nhận.": "Customers must follow provider terms, hold rights to input data and review videos before publishing. No guarantee is made that every prompt succeeds or that social platforms accept every result.",
   "Trial miễn phí": "Free trial",
+  "Trial miễn phí 1 ngày được cấp bằng file cho một thiết bị, tính 24 giờ từ lúc cấp; không kèm tài khoản hoặc token AI. Các gói trả phí giữ giá và thời hạn như bảng giá.": "The free 1-day trial is issued as a file for one device and lasts 24 hours from issuance; no AI account or tokens are included. Paid plan prices and terms remain as listed.",
   "Hỗ trợ tài khoản": "ACCOUNT SUPPORT",
   "Hỗ trợ tài khoản Muse AI": "Muse AI account support",
   "Hỗ trợ liên quan đến tài khoản Muse AI. Trạng thái và khả năng sử dụng phụ thuộc nền tảng Muse AI.": "Support is available for Muse AI accounts. Account status and availability depend on the Muse AI platform.",
