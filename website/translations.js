@@ -12,7 +12,8 @@ export const english = {
   "Video demo Muse Auto — Tác phẩm văn học": "Muse Auto demo — Literature",
   "Video demo tác phẩm văn học ·": "Literature demo ·",
 
-  "Windows hiện là bản 0.2.5; bản 0.2.6 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.6 is currently available for macOS.",
+  "Windows hiện là bản 0.2.5; bản 0.2.8 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.8 is currently available for macOS.",
+  "macOS 0.2.8: thêm Bài giảng, làm video bài học theo mục lục SGK Ngữ văn, Lịch sử lớp 6–9; Studio và Hàng đợi giữ như 0.2.7. Windows hiện là 0.2.5.": "macOS 0.2.8 adds Lessons: lesson videos built from the Vietnamese textbook contents for Literature and History, grades 6–9. Studio and Queue stay as in 0.2.7. Windows remains on 0.2.5.",
   "HỖ TRỢ MACOS": "MACOS HELP",
   "Mac báo “Muse Auto” Not Opened?": "Mac says “Muse Auto” Not Opened?",
   "Bản Mac hiện dùng chữ ký ad-hoc, chưa có Apple Developer ID/notarization. Cảnh báo này có thể xuất hiện với bản tải từ Internet; build lại không tự loại bỏ cảnh báo.": "The Mac build is ad-hoc signed, without Apple Developer ID or notarization. Internet downloads may trigger this warning; rebuilding alone does not remove it.",
