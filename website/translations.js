@@ -12,10 +12,10 @@ export const english = {
   "Video demo Muse Auto — Tác phẩm văn học": "Muse Auto demo — Literature",
   "Video demo tác phẩm văn học ·": "Literature demo ·",
 
-  "Windows hiện là bản 0.2.5; bản 0.2.9 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.9 is currently available for macOS.",
+  "Windows hiện là bản 0.2.5; bản 0.2.10 mới có trên macOS.": "Windows remains on 0.2.5; version 0.2.10 is currently available for macOS.",
   "Hướng dẫn": "Guide",
   "Xem hướng dẫn sử dụng": "Read the user guide (Vietnamese)",
-  "macOS 0.2.9: thêm Kênh video ngắn 9:16, SGK Lịch sử 10–12 và giữ một giọng đọc giữa các cảnh Muse. Studio và video KOL/KOC tạm khoá, sắp ra mắt. Windows hiện là 0.2.5.": "macOS 0.2.9 adds 9:16 Short videos, Grade 10–12 history textbooks and one consistent voice across Muse scenes. Studio and KOL/KOC videos are paused until a later release. Windows remains on 0.2.5.",
+  "macOS 0.2.10: video Muse giảng gắn với Kế hoạch kênh và xuất gói đăng bài; có Kênh video ngắn 9:16, SGK Lịch sử 10–12, một giọng đọc giữa các cảnh Muse. Studio và video KOL/KOC tạm khoá, sắp ra mắt. Windows hiện là 0.2.5.": "macOS 0.2.10 links Muse lesson videos to the channel plan and exports ready-to-post packs, alongside 9:16 Short videos, Grade 10–12 history textbooks and one consistent voice across Muse scenes. Studio and KOL/KOC videos are paused until a later release. Windows remains on 0.2.5.",
   "HỖ TRỢ MACOS": "MACOS HELP",
   "Mac báo “Muse Auto” Not Opened?": "Mac says “Muse Auto” Not Opened?",
   "Bản Mac hiện dùng chữ ký ad-hoc, chưa có Apple Developer ID/notarization. Cảnh báo này có thể xuất hiện với bản tải từ Internet; build lại không tự loại bỏ cảnh báo.": "The Mac build is ad-hoc signed, without Apple Developer ID or notarization. Internet downloads may trigger this warning; rebuilding alone does not remove it.",
